@@ -7,7 +7,7 @@ export default function Header() {
         <img src="/src/assets/react.svg" alt="logo" className="w-8"/>
       </div>
       <h1>
-        Chef Claude
+        EWAN, BASTA HEADER TO
       </h1>
     </header>
   )

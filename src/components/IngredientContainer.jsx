@@ -8,12 +8,12 @@ export default function IngredientContainer({ ingredients, generateRecipe }) {
   let ingredientElement = ingredients.map((ingredient) => <li>{ingredient}</li>);
 
   return (
-     <div className="mt-5">
+     <div className="mt-6">
         <h1 className="font-semibold text-lg">Ingredients on hand: </h1>
         <ul className="list-disc list-inside text-xs flex flex-col gap-2 mt-2 pl-2 text-gray-500 mb-6">
           {ingredientElement}
         </ul>
-        {ingredients.length > 3 && <div className="bg-gray-100 min-h-12 rounded-xl p-4 px-6 flex items-center">
+        {ingredients.length > 3 && <div className="bg-gray-100 min-h-12 rounded-xl p-4 px-6 flex items-center justify-between">
           <div>
             <h3 className="m-0 text-sm font-semibold">Ready for a recipe?</h3>
             <p className="text-xs text-gray-500">Generate a recipe from your list of ingredients</p>

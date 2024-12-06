@@ -19,19 +19,19 @@ function App() {
     setIngredients(newIngredients);
   }
 
-  async function generateRecipe() {
+  async function generateRecipe()  {
     let recipe = await getRecipe(ingredients);
     setRecipe(recipe);
   }
 
   return (
-    <div className='bg-white w-1/4 border pb-8'>
+    <div className='bg-white w-1/3 border pb-8 rounded-md'>
       <Header />
-      <div className='px-8'>
+      <main className='px-8'>
         <InputGroup handleAddIngredient={handleAddIngredient}/>
-        <IngredientContainer generateRecipe={generateRecipe}  ingredients={ingredients} />
+        <IngredientContainer generateRecipe={generateRecipe} ingredients={ingredients} />
         {recipe && <RecipeDescription recipe={recipe} />}
-      </div>
+      </main>
     </div>
   )
   
