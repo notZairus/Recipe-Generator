@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-    <div className='bg-white w-1/3 border pb-8 rounded-md'>
+    <div className='bg-white lg:w-1/3 border pb-8 rounded-md sm:w-1/2'>
       <Header />
       <main className='px-8'>
         <InputGroup handleAddIngredient={handleAddIngredient}/>
