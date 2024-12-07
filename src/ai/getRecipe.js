@@ -2,7 +2,7 @@
 import { HfInference } from "@huggingface/inference";
 
 export async function getRecipe(ingredients) {
-  const hf = new HfInference(import.meta.env.VITE_API_KEY);
+  const hf = new HfInference(import.meta.env.VITE_API_VERCEL);
 
   const response = await hf.chatCompletion({
     model: "Qwen/Qwen2.5-Coder-32B-Instruct",
